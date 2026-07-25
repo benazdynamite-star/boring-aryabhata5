@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-charcoal font-inter transition-colors duration-300;
+}
+
+.dark body {
+  @apply bg-brown-dark text-cream;
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #5C4033, #C9A227);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .gold-glow {
+    box-shadow: 0 0 30px rgba(201, 162, 39, 0.3);
+  }
+}
